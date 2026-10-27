@@ -21,6 +21,12 @@ The pipeline covers the full ML workflow:
 - Residual error analysis & Q-Q plots
 - Coefficient comparison across regularization strengths
 
+## Project Preview
+
+![California housing preview: value distribution, income relationship, geographic patterns, and ocean proximity](screenshots/01_project_preview.png)
+
+The preview is generated from the included housing dataset; detailed model diagnostics are available in the notebook.
+
 ---
 
 ## 📂 Project Structure
@@ -30,7 +36,9 @@ california-housing-price-prediction/
 │
 ├── housing.csv                        # California Housing dataset (local)
 ├── housing_price_prediction.ipynb     # Main Jupyter Notebook
-└── README.md                          # Project documentation
+├── screenshots/
+│   └── 01_project_preview.png         # README visual preview
+└── README.md                           # Project documentation
 ```
 
 ---
