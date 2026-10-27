@@ -37,7 +37,19 @@ california-housing-price-prediction/
 ├── housing.csv                        # California Housing dataset (local)
 ├── housing_price_prediction.ipynb     # Main Jupyter Notebook
 ├── screenshots/
-│   └── 01_project_preview.png         # README visual preview
+│   ├── 01_project_preview.png
+│   ├── alpha_tuning.png
+│   ├── coefficient_comparison.png
+│   ├── correlation_heatmap.png
+│   ├── cv_r2_boxplot.png
+│   ├── eda_missing_target.png
+│   ├── feature_distributions.png
+│   ├── model_comparison_metrics.png
+│   ├── ocean_proximity_analysis.png
+│   ├── predicted_vs_actual.png
+│   ├── qq_plots.png
+│   ├── residual_analysis.png
+│   └── target_correlations.png
 └── README.md                           # Project documentation
 ```
 
@@ -134,7 +146,7 @@ Combined via ColumnTransformer → Model
 
 ## 📉 Visualizations
 
-The notebook produces **10 publication-quality plots**:
+The notebook produces **12 publication-quality plots**:
 
 | Plot | Description |
 |------|-------------|
@@ -150,6 +162,17 @@ The notebook produces **10 publication-quality plots**:
 | Q-Q plots | Normality check on residuals |
 | Coefficient comparison | OLS vs Ridge vs Lasso side-by-side bar chart |
 | CV R² boxplot | 5-fold cross-validation score distribution |
+
+All plots generated when you run the notebook are saved in `screenshots/`, alongside the project preview. They are no longer written into the project root. The notebook locates the local `housing.csv` and project folder automatically.
+
+| Generated image | Preview |
+|---|---|
+| [Missing values and target](screenshots/eda_missing_target.png) | [Feature distributions](screenshots/feature_distributions.png) |
+| [Ocean proximity](screenshots/ocean_proximity_analysis.png) | [Correlation heatmap](screenshots/correlation_heatmap.png) |
+| [Target correlations](screenshots/target_correlations.png) | [Model comparison](screenshots/model_comparison_metrics.png) |
+| [Alpha tuning](screenshots/alpha_tuning.png) | [Predicted vs. actual](screenshots/predicted_vs_actual.png) |
+| [Residual analysis](screenshots/residual_analysis.png) | [Q-Q plots](screenshots/qq_plots.png) |
+| [Coefficient comparison](screenshots/coefficient_comparison.png) | [Cross-validation scores](screenshots/cv_r2_boxplot.png) |
 
 ---
 
